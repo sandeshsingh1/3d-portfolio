@@ -110,60 +110,59 @@ export const skills = [
 ];
 
 export const experiences = [
-    {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
-        iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
-        iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
+  {
+    title: "Full Stack Developer (Intern)",
+    company_name: "Vidyasala",
+    icon: react,
+    iconBg: "#accbe1",
+    date: "June 2024 - August 2024",
+    points: [
+      "Worked as a Full Stack Developer on live web applications during a 3-month internship.",
+      "Developed frontend features using React.js and Tailwind CSS.",
+      "Built and integrated backend APIs using Node.js and Express.",
+      "Collaborated remotely with mentors and team members to deliver project milestones.",
+    ],
+  },
+  {
+    title: "Frontend Developer",
+    company_name: "Personal Projects",
+    icon: react,
+    iconBg: "#fbc3bc",
+    date: "2023 - Present",
+    points: [
+      "Designed and developed responsive web applications using React.js.",
+      "Implemented modern UI components and improved user experience.",
+      "Integrated third-party services like EmailJS and REST APIs.",
+      "Focused on clean code, reusability, and performance optimization.",
+    ],
+  },
+  {
+    title: "DSA & Problem Solving",
+    company_name: "LeetCode & Practice",
+    icon: react,
+    iconBg: "#b7e4c7",
+    date: "2023 - Present",
+    points: [
+      "Solved 1000+ Data Structures and Algorithms problems in C++.",
+      "Strong understanding of arrays, strings, trees, graphs, heaps, and DP.",
+      "Improved problem-solving skills through regular practice.",
+      "Applied DSA concepts in real-world coding scenarios.",
+    ],
+  },
+  {
+    title: "Electronics And Communication Undergraduate",
+    company_name: "Bachelor of Technology (ECI)",
+    icon: meta,
+    iconBg: "#a2d2ff",
+    date: "2023 - Present",
+    points: [
+      "Currently pursuing B.Tech in Electronics And Communication (IOT)Engineering.",
+      "Studied core subjects including DBMS, OS, CN, and OOPs.",
+      "Built multiple academic and personal projects alongside coursework.",
+      "Actively learning Full Stack Development and Machine Learning.",
+    ],
+  },
 ];
-
 export const socialLinks = [
     {
         name: 'Contact',
@@ -173,56 +172,62 @@ export const socialLinks = [
     {
         name: 'GitHub',
         iconUrl: github,
-        link: 'https://github.com/YourGitHubUsername',
+        link: 'https://github.com/sandeshsingh1',
     },
     {
         name: 'LinkedIn',
         iconUrl: linkedin,
-        link: 'https://www.linkedin.com/in/YourLinkedInUsername',
+        link: 'https://www.linkedin.com/in/sandesh-singh-58605a378',
     }
 ];
 
 export const projects = [
-    {
-        iconUrl: pricewise,
-        theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/adrianhajdin/pricewise',
-    },
-    {
-        iconUrl: threads,
-        theme: 'btn-back-green',
-        name: 'Full Stack Threads Clone',
-        description: 'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-        link: 'https://github.com/adrianhajdin/threads',
-    },
-    {
-        iconUrl: car,
-        theme: 'btn-back-blue',
-        name: 'Car Finding App',
-        description: 'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
-    },
-    {
-        iconUrl: snapgram,
-        theme: 'btn-back-pink',
-        name: 'Full Stack Instagram Clone',
-        description: 'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-        link: 'https://github.com/adrianhajdin/social_media_app',
-    },
-    {
-        iconUrl: estate,
-        theme: 'btn-back-black',
-        name: 'Real-Estate Application',
-        description: 'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-        link: 'https://github.com/adrianhajdin/projects_realestate',
-    },
-    {
-        iconUrl: summiz,
-        theme: 'btn-back-yellow',
-        name: 'AI Summarizer Application',
-        description: 'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-        link: 'https://github.com/adrianhajdin/project_ai_summarizer',
-    }
+  {
+    iconUrl: react,
+    theme: 'btn-back-red',
+    name: '3D Portfolio',
+    description:
+      'Interactive 3D developer portfolio built using React, Three.js, React Three Fiber, and Vite.',
+    link: 'https://github.com/sandeshsingh1/3d-portfolio',
+  },
+  {
+    iconUrl: react,
+    theme: 'btn-back-green',
+    name: 'Pokemon Gallery',
+    description:
+      'A React-based Pokémon gallery application showcasing API integration and component-driven UI.',
+    link: 'https://github.com/sandeshsingh1/Pokemon-Gallery',
+  },
+  {
+    iconUrl: react,
+    theme: 'btn-back-blue',
+    name: 'Skin Cancer Predictor',
+    description:
+      'Machine learning project that predicts skin cancer using image processing and classification techniques.',
+    link: 'https://github.com/sandeshsingh1/skin-cancer-predictor',
+  },
+  {
+    iconUrl: react,
+    theme: 'btn-back-pink',
+    name: 'Placement Prediction ML',
+    description:
+      'Machine learning model to predict student placement outcomes based on academic and skill data.',
+    link: 'https://github.com/sandeshsingh1/placement-prediction-ml',
+  },
+  {
+    iconUrl: javascript,
+    theme: 'btn-back-black',
+    name: 'Hotel Management System',
+    description:
+      'Web-based hotel management system built using HTML, CSS, and JavaScript.',
+    link: 'https://github.com/sandeshsingh1/portfolio',
+  },
+  {
+    iconUrl:react,
+    theme: 'btn-back-yellow',
+    name: 'LeetCode DSA Practice',
+    description:
+      'Collection of Data Structures and Algorithms problems solved in C++ including trees, graphs, heaps, and DP.',
+    link: 'https://github.com/sandeshsingh1/leetcode',
+  },
 ];
