@@ -380,3 +380,87 @@ body:has(.card[data-color="green"]:hover) {
   opacity: 1;
   transform: translateY(0);
 }
+/* =====================================
+   CONTACT FORM — DARK MODE FIX
+   ===================================== */
+
+/* Labels */
+:root[data-theme="dark"] label,
+:root[data-theme="dark"] .contact-label,
+:root[data-theme="dark"] .form-label {
+  color: #e6edf3 !important; /* near-white */
+  font-weight: 500;
+}
+
+/* Input + textarea background */
+:root[data-theme="dark"] input,
+:root[data-theme="dark"] textarea {
+  background-color: #020617; /* deep slate */
+  color: #e6edf3;
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+/* Placeholder text */
+:root[data-theme="dark"] input::placeholder,
+:root[data-theme="dark"] textarea::placeholder {
+  color: #9aa4b2;
+}
+
+/* Focus state */
+:root[data-theme="dark"] input:focus,
+:root[data-theme="dark"] textarea:focus {
+  outline: none;
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 2px rgba(56,189,248,0.25);
+}
+
+/* Section heading */
+:root[data-theme="dark"] .contact h1,
+:root[data-theme="dark"] .contact h2,
+:root[data-theme="dark"] .contact h3 {
+  color: #f8fafc;
+}
+
+/* Submit button text clarity */
+:root[data-theme="dark"] button {
+  color: #ffffff !important;
+  font-weight: 600;
+}
+/* =====================================
+   ALERT COMPONENT — DARK MODE FIX
+   (Tailwind class override)
+   ===================================== */
+
+/* Main alert container */
+:root[data-theme="dark"] .bg-blue-800 {
+  background-color: #0ea5e9 !important; /* sky-500 */
+}
+
+:root[data-theme="dark"] .bg-red-800 {
+  background-color: #dc2626 !important; /* red-600 */
+}
+
+/* Badge (Success / Failed pill) */
+:root[data-theme="dark"] .bg-blue-500 {
+  background-color: #0284c7 !important; /* sky-600 */
+}
+
+:root[data-theme="dark"] .bg-red-500 {
+  background-color: #b91c1c !important; /* red-700 */
+}
+
+/* Text clarity */
+:root[data-theme="dark"] .text-indigo-100 {
+  color: #ffffff !important;
+}
+
+/* Message text */
+:root[data-theme="dark"] .absolute p {
+  color: #ffffff !important;
+  font-weight: 500;
+}
+
+/* Position + depth (optional but clean) */
+:root[data-theme="dark"] .absolute.top-10 {
+  z-index: 9999;
+}
