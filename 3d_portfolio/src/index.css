@@ -188,3 +188,180 @@ body:has(.card[data-color="green"]:hover) {
   box-shadow: 0.6vmin 0.6vmin #fff, 1vmin 1vmin #d2e4ff, 1vmin 1vmin #d2e4ff,
     0.65vmin 1vmin #d2e4ff, 1vmin 0.65vmin #d2e4ff;
 }
+/* //adding toggle */
+/* =========================
+   DARK MODE THEME
+   ========================= */
+/* ===============================
+   PROFESSIONAL DARK MODE
+   =============================== */
+
+:root[data-theme="dark"] {
+  --bg-main: #0b1220;
+  --bg-card: #0f172a;
+  --text-primary: #e6edf3;   /* near-white */
+  --text-secondary: #9aa4b2; /* muted gray */
+  --text-muted: #6b7280;
+  --accent: #38bdf8;
+}
+
+/* Page background */
+:root[data-theme="dark"],
+:root[data-theme="dark"] body {
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+}
+
+/* ===============================
+   TEXT FIXES (MOST IMPORTANT)
+   =============================== */
+
+:root[data-theme="dark"] h1,
+:root[data-theme="dark"] h2,
+:root[data-theme="dark"] h3,
+:root[data-theme="dark"] .head-text,
+:root[data-theme="dark"] .subhead-text {
+  color: var(--text-primary);
+}
+
+:root[data-theme="dark"] p,
+:root[data-theme="dark"] span,
+:root[data-theme="dark"] li {
+  color: var(--text-secondary);
+}
+
+/* Fix Tailwind black text */
+:root[data-theme="dark"] .text-black,
+:root[data-theme="dark"] .text-slate-900,
+:root[data-theme="dark"] .text-gray-900 {
+  color: var(--text-primary) !important;
+}
+
+/* Muted text */
+:root[data-theme="dark"] .text-slate-500,
+:root[data-theme="dark"] .text-gray-500 {
+  color: var(--text-muted) !important;
+}
+
+/* ===============================
+   CARDS / PROJECTS / CTA
+   =============================== */
+
+:root[data-theme="dark"] .bg-white {
+  background-color: var(--bg-card) !important;
+}
+
+:root[data-theme="dark"] .block-container {
+  background: var(--bg-card);
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.04),
+    0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* ===============================
+   LINKS & BUTTONS
+   =============================== */
+
+:root[data-theme="dark"] a {
+  color: var(--accent);
+}
+
+:root[data-theme="dark"] a:hover {
+  color: #7dd3fc;
+}
+
+:root[data-theme="dark"] .btn-outline {
+  border: 1px solid rgba(255,255,255,0.15);
+  color: var(--text-primary);
+  background: rgba(255,255,255,0.03);
+}
+
+:root[data-theme="dark"] .btn-outline:hover {
+  background: rgba(56,189,248,0.15);
+  border-color: var(--accent);
+}
+
+/* ===============================
+   FOOTER
+   =============================== */
+
+:root[data-theme="dark"] footer {
+  color: var(--text-muted);
+}
+
+
+/* ===============================
+   CTA BUTTON TEXT FIX (DARK MODE)
+   =============================== */
+
+:root[data-theme="dark"] .btn {
+  background-color: #0ea5e9; /* sky-500 */
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+:root[data-theme="dark"] .btn:hover {
+  background-color: #0284c7; /* sky-600 */
+}
+
+/* Outline button (Download Resume) */
+:root[data-theme="dark"] .btn-outline {
+  color: #e6edf3 !important;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+:root[data-theme="dark"] .btn-outline:hover {
+  background: rgba(56, 189, 248, 0.18);
+  border-color: #38bdf8;
+  color: #ffffff !important;
+}
+/* =====================================
+   VERTICAL TIMELINE — DARK MODE FIX
+   ===================================== */
+
+:root[data-theme="dark"] .vertical-timeline-element-content {
+  background: #0f172a !important; /* slate-900 */
+  color: #e6edf3 !important;
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,0.05),
+    0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* Title */
+:root[data-theme="dark"] .vertical-timeline-element-content h3 {
+  color: #f8fafc !important;
+  font-weight: 600;
+}
+
+/* Company / subtitle */
+:root[data-theme="dark"] .vertical-timeline-element-content h4,
+:root[data-theme="dark"] .vertical-timeline-element-content .vertical-timeline-element-subtitle {
+  color: #cbd5f5 !important;
+}
+
+/* Bullet points */
+:root[data-theme="dark"] .vertical-timeline-element-content p,
+:root[data-theme="dark"] .vertical-timeline-element-content li {
+  color: #9aa4b2 !important;
+}
+
+/* Date text */
+:root[data-theme="dark"] .vertical-timeline-element-date {
+  color: #94a3b8 !important;
+}
+
+/* Arrow (speech bubble pointer) */
+:root[data-theme="dark"] .vertical-timeline-element-content-arrow {
+  border-right: 7px solid #0f172a !important;
+}
+
+/* Timeline line */
+:root[data-theme="dark"] .vertical-timeline::before {
+  background: rgba(255,255,255,0.15);
+}
+
+/* Icons */
+:root[data-theme="dark"] .vertical-timeline-element-icon {
+  box-shadow: 0 0 0 4px rgba(255,255,255,0.1);
+}
