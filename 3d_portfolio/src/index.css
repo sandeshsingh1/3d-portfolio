@@ -365,3 +365,18 @@ body:has(.card[data-color="green"]:hover) {
 :root[data-theme="dark"] .vertical-timeline-element-icon {
   box-shadow: 0 0 0 4px rgba(255,255,255,0.1);
 }
+/* //adding scroll animation */
+/* ===============================
+   SCROLL ANIMATION (TIMELINE)
+   =============================== */
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

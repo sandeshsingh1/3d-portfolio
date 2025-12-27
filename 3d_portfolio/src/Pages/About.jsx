@@ -2,6 +2,7 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
+import { useEffect, useRef } from "react";
 
 import { CTA } from "../Components";
 import { experiences, skills } from "../constants";
@@ -9,6 +10,25 @@ import { experiences, skills } from "../constants";
 import "react-vertical-timeline-component/style.min.css";
 
 const About = () => {
+  useEffect(() => {
+  const elements = document.querySelectorAll(".animate-on-scroll");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  elements.forEach((el) => observer.observe(el));
+
+  return () => observer.disconnect();
+}, []);
+
   return (
     <section className='max-container'>
       <h1 className='head-text'>
@@ -58,7 +78,8 @@ const About = () => {
         <div className='mt-12 flex'>
           <VerticalTimeline>
             {experiences.map((experience, index) => (
-              <VerticalTimelineElement
+              <VerticalTimelineElement 
+              className="animate-on-scroll"
                 key={experience.company_name}
                 date={experience.date}
                 iconStyle={{ background: experience.iconBg }}
