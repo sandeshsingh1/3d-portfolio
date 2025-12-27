@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-
+import resume from "../assets/resume/Sandesh-Singh-Resume.pdf";
 import { logo } from "../assets/images";
 
 const Navbar = () => {
@@ -15,6 +15,14 @@ const Navbar = () => {
         <NavLink to='/projects' className={({ isActive }) => isActive ? "text-blue-600" : "text-black"}>
           Projects
         </NavLink>
+          {/* Resume Button */}
+        <a
+          href={resume}
+          download
+          className="btn btn-outline"
+        >
+          Resume
+        </a>
       </nav>
     </header>
   );
